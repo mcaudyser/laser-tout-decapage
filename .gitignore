@@ -1,0 +1,9 @@
+# Fichiers temporaires Office
+~$*.pptx
+~$*.docx
+~$*.xlsx
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
