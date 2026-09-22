@@ -4,7 +4,7 @@
     "subtitle": "Laser Tout Décapage redonne vie à vos supports par décapage laser : 100 % écologique, rapide, et sans risque pour le matériau d'origine.",
     "badge": "Particuliers · Professionnels · Collectivités"
   },
-  "marquee": "100% écologique · Hauts-de-France · Centre-Val de Loire · Yvelines & Ouest parisien · Particuliers · Professionnels · Collectivités · Sans eau ni chimie · Sans sable ni poussière",
+  "marquee": "100% écologique · Hauts-de-France · Centre-Val de Loire · Yvelines & Ouest parisien",
   "arguments": [
     { "title": "100 % écologique", "text": "Aucun rejet toxique, aucun résidu chimique après intervention." },
     { "title": "Sans eau ni chimie", "text": "Un procédé entièrement à sec, sans solvant ni détergent." },
@@ -40,7 +40,7 @@
     "particuliers": {
       "title": "Particuliers",
       "text": "Un meuble de famille, un portail, une façade à sauver ? On intervient chez vous, avec soin — sans poncer, sans produit.",
-      "examples": []
+      "examples": ["Meubles & mobilier ancien", "Portails, clôtures & volets", "Terrasses & façades"]
     },
     "professionnels": {
       "title": "Professionnels",

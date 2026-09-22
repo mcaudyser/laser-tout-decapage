@@ -98,6 +98,21 @@ section {
   margin: 0;
 }
 
+.section-head-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--red), var(--orange));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin: 0 auto 18px;
+  box-shadow: 0 10px 24px rgba(226, 18, 33, 0.28);
+}
+
+.section-head-icon svg { width: 26px; height: 26px; }
+
 /* ===== Dark surface (header / hero / footer) shared texture ===== */
 
 .dark-surface {
@@ -126,16 +141,15 @@ section {
 }
 
 .dark-surface::after {
-  /* golden halo top-right */
+  /* golden halo top-left + red halo top-right, full-bleed so fades never end on a hard edge */
   content: "";
   position: absolute;
-  top: -20%;
-  right: -10%;
-  width: 60%;
-  height: 80%;
+  inset: 0;
   z-index: 0;
   pointer-events: none;
-  background: radial-gradient(circle, rgba(255, 183, 3, 0.16) 0%, rgba(255, 183, 3, 0) 70%);
+  background:
+    radial-gradient(ellipse 60% 80% at 8% 0%, rgba(255, 183, 3, 0.16) 0%, rgba(255, 183, 3, 0) 70%),
+    radial-gradient(ellipse 60% 80% at 92% 0%, rgba(226, 18, 33, 0.14) 0%, rgba(226, 18, 33, 0) 70%);
 }
 
 .laser-lines {
@@ -429,7 +443,7 @@ section {
 
 .marquee-track {
   display: inline-flex;
-  animation: marquee-scroll 28s linear infinite;
+  animation: marquee-scroll 16s linear infinite;
 }
 
 .marquee-track span {
@@ -518,13 +532,44 @@ section {
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 32px;
-  align-items: center;
+  align-items: stretch;
 }
+
+.compare-info {
+  background: var(--card-bg);
+  border: 1px solid var(--line-dark-1);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  padding: 30px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  height: 100%;
+}
+
+.compare-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 6px;
+  flex-shrink: 0;
+}
+
+.compare-icon svg { width: 22px; height: 22px; }
+
+.compare-icon--bois { background: linear-gradient(135deg, #b98e57, #6b4a28); }
+.compare-icon--metal { background: linear-gradient(135deg, #aab0b6, #5b6167); }
+.compare-icon--pierre { background: linear-gradient(135deg, #d7cca9, #96876a); }
 
 .compare-info h3 {
   font-size: 1.4rem;
   color: var(--text-dark);
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .compare-info p {
@@ -737,15 +782,41 @@ section {
 }
 
 .client-card {
+  position: relative;
+  overflow: hidden;
   background: var(--card-bg);
   border: 1px solid var(--line-dark-1);
   border-radius: var(--radius);
-  padding: 30px 26px;
+  padding: 34px 26px 26px;
   box-shadow: var(--shadow-card);
   display: flex;
   flex-direction: column;
   gap: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.client-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--red), var(--yellow));
+}
+
+.client-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.client-card-icon {
+  margin-bottom: 4px;
+}
+
+.client-card-icon--particuliers { background: linear-gradient(135deg, var(--red), var(--orange)); }
+.client-card-icon--professionnels { background: linear-gradient(135deg, var(--orange), var(--yellow)); }
+.client-card-icon--collectivites { background: linear-gradient(135deg, #6b6f76, #3a3d43); }
 
 .client-card h3 {
   font-size: 1.15rem;
@@ -764,6 +835,7 @@ section {
   gap: 8px;
   border-top: 1px solid var(--line-dark-1);
   padding-top: 14px;
+  margin-top: auto;
 }
 
 .client-card ul li {

@@ -80,8 +80,8 @@
 
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track">
-    <span data-field="marquee">100% écologique · Hauts-de-France · Centre-Val de Loire · Yvelines & Ouest parisien · Particuliers · Professionnels · Collectivités · Sans eau ni chimie · Sans sable ni poussière</span>
-    <span>100% écologique · Hauts-de-France · Centre-Val de Loire · Yvelines & Ouest parisien · Particuliers · Professionnels · Collectivités · Sans eau ni chimie · Sans sable ni poussière</span>
+    <span data-field="marquee">100% écologique · Hauts-de-France · Centre-Val de Loire · Yvelines & Ouest parisien</span>
+    <span>100% écologique · Hauts-de-France · Centre-Val de Loire · Yvelines & Ouest parisien</span>
   </div>
 </div>
 
@@ -123,6 +123,9 @@
 <section id="comparateur" class="comparateur-section section-pad">
   <div class="container">
     <div class="section-head">
+      <div class="section-head-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 3 4 4-4 4"/><path d="M21 7H9a4 4 0 0 0-4 4v1"/><path d="m7 21-4-4 4-4"/><path d="M3 17h12a4 4 0 0 0 4-4v-1"/></svg>
+      </div>
       <span class="eyebrow">Résultats</span>
       <h2>Avant / après, en un glissement</h2>
       <p>Faites glisser le curseur pour révéler la surface avant intervention.</p>
@@ -131,6 +134,9 @@
     <div class="compare-list">
       <div class="compare">
         <div class="compare-info">
+          <div class="compare-icon compare-icon--bois">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
           <h3>Bois</h3>
           <p>Meubles, poutres, portails : le bois retrouve son grain naturel.</p>
         </div>
@@ -147,6 +153,9 @@
 
       <div class="compare">
         <div class="compare-info">
+          <div class="compare-icon compare-icon--metal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
           <h3>Métal</h3>
           <p>Rouille et peinture disparaissent sans attaquer le métal.</p>
         </div>
@@ -163,6 +172,9 @@
 
       <div class="compare">
         <div class="compare-info">
+          <div class="compare-icon compare-icon--pierre">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+          </div>
           <h3>Pierre & carrelage</h3>
           <p>Façades, monuments, carrelage encrassé : la pierre respire à nouveau.</p>
         </div>
@@ -264,10 +276,21 @@
     </div>
     <div class="clients-grid">
       <div class="client-card">
+        <div class="card-icon client-card-icon client-card-icon--particuliers">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
         <h3 data-field="clients.particuliers.title">Particuliers</h3>
         <p data-field="clients.particuliers.text">Un meuble de famille, un portail, une façade à sauver ? On intervient chez vous, avec soin — sans poncer, sans produit.</p>
+        <ul>
+          <li>Meubles & mobilier ancien</li>
+          <li>Portails, clôtures & volets</li>
+          <li>Terrasses & façades</li>
+        </ul>
       </div>
       <div class="client-card">
+        <div class="card-icon client-card-icon client-card-icon--professionnels">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
         <h3 data-field="clients.professionnels.title">Professionnels</h3>
         <p data-field="clients.professionnels.text">Nettoyage technique, décapage de pièces, entretien régulier : nos interventions s'adaptent à votre activité.</p>
         <ul>
@@ -277,6 +300,9 @@
         </ul>
       </div>
       <div class="client-card">
+        <div class="card-icon client-card-icon client-card-icon--collectivites">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M9 21v-6h6v6"/></svg>
+        </div>
         <h3 data-field="clients.collectivites.title">Collectivités</h3>
         <p data-field="clients.collectivites.text">Un entretien respectueux du patrimoine, sans agresser les matériaux d'origine.</p>
         <ul>
