@@ -1,0 +1,14 @@
+{
+  "bois": {
+    "avant": "images/comparateur/bois-avant.svg",
+    "apres": "images/comparateur/bois-apres.svg"
+  },
+  "metal": {
+    "avant": "images/comparateur/metal-avant.svg",
+    "apres": "images/comparateur/metal-apres.svg"
+  },
+  "pierre": {
+    "avant": "images/comparateur/pierre-avant.svg",
+    "apres": "images/comparateur/pierre-apres.svg"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "title": "Tout type de surface, une seule technologie.",
+    "subtitle": "Laser Tout Décapage redonne vie à vos supports par décapage laser : 100 % écologique, rapide, et sans risque pour le matériau d'origine.",
+    "badge": "Particuliers · Professionnels · Collectivités"
+  },
+  "marquee": "100% écologique · Hauts-de-France · Centre-Val de Loire · Yvelines & Ouest parisien · Particuliers · Professionnels · Collectivités · Sans eau ni chimie · Sans sable ni poussière",
+  "arguments": [
+    { "title": "100 % écologique", "text": "Aucun rejet toxique, aucun résidu chimique après intervention." },
+    { "title": "Sans eau ni chimie", "text": "Un procédé entièrement à sec, sans solvant ni détergent." },
+    { "title": "Sans sable, sans poussière", "text": "Le support n'est jamais agressé ni éraflé." },
+    { "title": "Rapide, sans risque", "text": "Un ciblage laser précis, sans usure du matériau d'origine." }
+  ],
+  "technologie": {
+    "title": "La technologie, expliquée simplement",
+    "steps": [
+      { "title": "Le laser cible la surface", "text": "Un faisceau de lumière concentrée vise uniquement la couche à retirer : rouille, peinture, suie ou dépôt." },
+      { "title": "La saleté se vaporise", "text": "La chaleur du laser fait éclater la crasse en micro-particules, sans contact ni frottement." },
+      { "title": "Le support garde son aspect d'origine", "text": "Bois, métal ou pierre retrouvent leur état naturel, sans usure ni trace." }
+    ]
+  },
+  "applications": {
+    "bois": {
+      "title": "Bois",
+      "image": "images/applications/bois.svg",
+      "items": ["Meubles de famille & meubles anciens", "Poutres, charpentes, escaliers", "Portails, volets, huisseries"]
+    },
+    "metal": {
+      "title": "Métal",
+      "image": "images/applications/metal.svg",
+      "items": ["Rouille sur portails & ferronneries", "Pièces industrielles & outillage", "Mobilier métallique"]
+    },
+    "pierre": {
+      "title": "Pierre & carrelage",
+      "image": "images/applications/pierre.svg",
+      "items": ["Murs en pierre naturelle & façades", "Monuments & sites patrimoniaux", "Suie après incendie, carrelage encrassé"]
+    }
+  },
+  "clients": {
+    "particuliers": {
+      "title": "Particuliers",
+      "text": "Un meuble de famille, un portail, une façade à sauver ? On intervient chez vous, avec soin — sans poncer, sans produit.",
+      "examples": []
+    },
+    "professionnels": {
+      "title": "Professionnels",
+      "text": "Nettoyage technique, décapage de pièces, entretien régulier : nos interventions s'adaptent à votre activité.",
+      "examples": ["Aéronautique, automobile, métallurgie", "Bâtiment & restauration", "Métiers de bouche"]
+    },
+    "collectivites": {
+      "title": "Collectivités",
+      "text": "Un entretien respectueux du patrimoine, sans agresser les matériaux d'origine.",
+      "examples": ["Musées & sites patrimoniaux", "Monuments historiques", "Bâtiments publics & façades"]
+    }
+  },
+  "zones": [
+    { "title": "Hauts-de-France", "text": "Lille et environs" },
+    { "title": "Centre-Val de Loire", "text": "Intervention sur l'ensemble de la région" },
+    { "title": "Yvelines & Ouest parisien", "text": "Intervention sur l'ensemble du secteur" }
+  ],
+  "contact": {
+    "telephone": "",
+    "email": "contact@lasertoutdecapage.fr",
+    "zones_texte": "Hauts-de-France, Centre-Val de Loire, Yvelines & Ouest parisien"
+  },
+  "footer": {
+    "siret": ""
+  }
+}

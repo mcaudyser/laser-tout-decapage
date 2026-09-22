@@ -1,9 +1,20 @@
-# Fichiers temporaires Office
-~$*.pptx
-~$*.docx
-~$*.xlsx
+# Node / tooling (au cas où un jour un build step est ajouté)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Netlify
+.netlify/
 
 # OS
 .DS_Store
 Thumbs.db
-desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+.claude/
+
+# Environnement
+.env
+.env.local

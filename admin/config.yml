@@ -1,0 +1,156 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: "fr"
+
+collections:
+  - name: "contenu"
+    label: "Contenu des pages"
+    files:
+      - file: "content/site.json"
+        label: "Contenu du site"
+        name: "site"
+        fields:
+          - label: "Accueil (Hero)"
+            name: "hero"
+            widget: object
+            fields:
+              - { label: "Titre", name: "title", widget: string }
+              - { label: "Sous-titre", name: "subtitle", widget: text }
+              - { label: "Badge", name: "badge", widget: string }
+
+          - label: "Bandeau défilant"
+            name: "marquee"
+            widget: string
+
+          - label: "4 arguments clés"
+            name: "arguments"
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Titre", name: "title", widget: string }
+              - { label: "Texte", name: "text", widget: text }
+
+          - label: "Technologie"
+            name: "technologie"
+            widget: object
+            fields:
+              - { label: "Titre de section", name: "title", widget: string }
+              - label: "Étapes"
+                name: "steps"
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Titre", name: "title", widget: string }
+                  - { label: "Texte", name: "text", widget: text }
+
+          - label: "Applications"
+            name: "applications"
+            widget: object
+            fields:
+              - label: "Bois"
+                name: "bois"
+                widget: object
+                fields:
+                  - { label: "Titre", name: "title", widget: string }
+                  - { label: "Image", name: "image", widget: image }
+                  - { label: "Exemples", name: "items", widget: list, field: { label: "Exemple", name: "item", widget: string } }
+              - label: "Métal"
+                name: "metal"
+                widget: object
+                fields:
+                  - { label: "Titre", name: "title", widget: string }
+                  - { label: "Image", name: "image", widget: image }
+                  - { label: "Exemples", name: "items", widget: list, field: { label: "Exemple", name: "item", widget: string } }
+              - label: "Pierre & carrelage"
+                name: "pierre"
+                widget: object
+                fields:
+                  - { label: "Titre", name: "title", widget: string }
+                  - { label: "Image", name: "image", widget: image }
+                  - { label: "Exemples", name: "items", widget: list, field: { label: "Exemple", name: "item", widget: string } }
+
+          - label: "Clients"
+            name: "clients"
+            widget: object
+            fields:
+              - label: "Particuliers"
+                name: "particuliers"
+                widget: object
+                fields:
+                  - { label: "Titre", name: "title", widget: string }
+                  - { label: "Texte", name: "text", widget: text }
+                  - { label: "Exemples", name: "examples", widget: list, required: false, field: { label: "Exemple", name: "item", widget: string } }
+              - label: "Professionnels"
+                name: "professionnels"
+                widget: object
+                fields:
+                  - { label: "Titre", name: "title", widget: string }
+                  - { label: "Texte", name: "text", widget: text }
+                  - { label: "Exemples", name: "examples", widget: list, required: false, field: { label: "Exemple", name: "item", widget: string } }
+              - label: "Collectivités"
+                name: "collectivites"
+                widget: object
+                fields:
+                  - { label: "Titre", name: "title", widget: string }
+                  - { label: "Texte", name: "text", widget: text }
+                  - { label: "Exemples", name: "examples", widget: list, required: false, field: { label: "Exemple", name: "item", widget: string } }
+
+          - label: "Zones d'intervention"
+            name: "zones"
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Titre", name: "title", widget: string }
+              - { label: "Texte", name: "text", widget: string }
+
+          - label: "Mentions légales (footer)"
+            name: "footer"
+            widget: object
+            fields:
+              - { label: "Numéro SIRET", name: "siret", widget: string, required: false }
+
+  - name: "comparateur"
+    label: "Comparateur avant/après"
+    files:
+      - file: "content/comparator.json"
+        label: "Photos avant / après"
+        name: "comparator"
+        fields:
+          - label: "Bois"
+            name: "bois"
+            widget: object
+            fields:
+              - { label: "Photo avant", name: "avant", widget: image }
+              - { label: "Photo après", name: "apres", widget: image }
+          - label: "Métal"
+            name: "metal"
+            widget: object
+            fields:
+              - { label: "Photo avant", name: "avant", widget: image }
+              - { label: "Photo après", name: "apres", widget: image }
+          - label: "Pierre & carrelage"
+            name: "pierre"
+            widget: object
+            fields:
+              - { label: "Photo avant", name: "avant", widget: image }
+              - { label: "Photo après", name: "apres", widget: image }
+
+  - name: "coordonnees"
+    label: "Coordonnées"
+    files:
+      - file: "content/site.json"
+        label: "Coordonnées de contact"
+        name: "contact"
+        fields:
+          - label: "Coordonnées"
+            name: "contact"
+            widget: object
+            fields:
+              - { label: "Téléphone", name: "telephone", widget: string, required: false }
+              - { label: "Email", name: "email", widget: string }
+              - { label: "Zones desservies (texte)", name: "zones_texte", widget: string }
