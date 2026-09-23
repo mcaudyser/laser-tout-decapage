@@ -8,7 +8,7 @@
   "applications": {
     "bois": {
       "title": "Bois",
-      "image": "/images/uploads/bois.png",
+      "image": "/images/uploads/bois.jpg",
       "items": [
         "Meubles de famille & meubles anciens",
         "Poutres, charpentes, escaliers",
@@ -26,7 +26,7 @@
     },
     "pierre": {
       "title": "Pierre & carrelage",
-      "image": "/images/uploads/brique.png",
+      "image": "/images/uploads/brique.jpg",
       "items": [
         "Murs en pierre naturelle & façades",
         "Monuments & sites patrimoniaux",
@@ -79,7 +79,7 @@
   },
   "technologie": {
     "title": "La technologie, expliquée simplement",
-    "image": "images/technologie/laser-en-action.svg",
+    "image": "/images/uploads/laser-en-marche.jpg",
     "image_legende": "Le laser en action : la couche à retirer disparaît, le support reste intact.",
     "steps": [
       {
