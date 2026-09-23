@@ -79,6 +79,8 @@
   },
   "technologie": {
     "title": "La technologie, expliquée simplement",
+    "image": "images/technologie/laser-en-action.svg",
+    "image_legende": "Le laser en action : la couche à retirer disparaît, le support reste intact.",
     "steps": [
       {
         "title": "Le laser cible la surface",

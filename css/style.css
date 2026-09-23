@@ -709,6 +709,37 @@ section {
   font-size: 0.95rem;
 }
 
+.techno-photo {
+  margin: 48px 0 0;
+}
+
+.techno-photo-frame {
+  position: relative;
+  aspect-ratio: 16 / 7;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--dark-1);
+  box-shadow: var(--shadow-card);
+}
+
+.techno-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.techno-photo figcaption {
+  margin-top: 14px;
+  text-align: center;
+  color: var(--text-dark-dim);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .techno-photo { margin-top: 32px; }
+  .techno-photo-frame { aspect-ratio: 4 / 3; }
+}
+
 /* ===== Applications ===== */
 
 .applications-section { background: #fff; }

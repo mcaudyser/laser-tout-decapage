@@ -64,6 +64,8 @@ collections:
             widget: object
             fields:
               - { label: "Titre de section", name: "title", widget: string }
+              - { label: "Photo du laser en action", name: "image", widget: image, required: false, hint: "Format paysage conseillé (ex. 1600 × 900 px)" }
+              - { label: "Légende de la photo", name: "image_legende", widget: string, required: false }
               - label: "Étapes"
                 name: "steps"
                 widget: list
