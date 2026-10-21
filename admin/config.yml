@@ -43,6 +43,7 @@ collections:
             name: "hero"
             widget: object
             fields:
+              - { label: "Surtitre (petit texte au-dessus du titre)", name: "kicker", widget: string, required: false }
               - { label: "Titre", name: "title", widget: string }
               - { label: "Sous-titre", name: "subtitle", widget: text }
               - { label: "Badge", name: "badge", widget: string }

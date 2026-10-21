@@ -1,6 +1,6 @@
 {
   "contact": {
-    "telephone": "",
+    "telephone": "06 09 10 63 15",
     "email": "contact@lasertoutdecapage.fr",
     "zones_texte": "Hauts-de-France, Centre-Val de Loire, Yvelines & Ouest parisien"
   },
@@ -114,6 +114,7 @@
     }
   ],
   "hero": {
+    "kicker": "Décapage laser mobile",
     "title": "Tout type de surface, une seule technologie.",
     "subtitle": "Laser Tout Décapage redonne vie à vos supports par décapage laser : 100 % écologique, rapide, et sans risque pour le matériau d'origine.",
     "badge": "Particuliers · Professionnels · Collectivités"
