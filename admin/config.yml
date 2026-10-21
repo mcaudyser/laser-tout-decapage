@@ -130,6 +130,7 @@ collections:
             fields:
               - { label: "Titre", name: "title", widget: string }
               - { label: "Texte", name: "text", widget: string }
+              - { label: "Villes desservies (séparées par des virgules)", name: "villes", widget: text, required: false, hint: "Écrivez les villes en toutes lettres : c'est ce qui aide Google et les IA à vous associer à ces villes." }
 
           - label: "Mentions légales (footer)"
             name: "footer"

@@ -2,7 +2,7 @@
   "contact": {
     "telephone": "06 09 10 63 15",
     "email": "contact@lasertoutdecapage.fr",
-    "zones_texte": "Hauts-de-France, Centre-Val de Loire, Yvelines & Ouest parisien"
+    "zones_texte": "Nord (59), Pas-de-Calais (62), Eure-et-Loir (28), Centre-Val de Loire, Yvelines (78) & Ouest parisien"
   },
   "applications": {
     "bois": {
@@ -35,16 +35,19 @@
   },
   "zones": [
     {
-      "title": "Hauts-de-France",
-      "text": "Lille et environs"
+      "title": "Nord & Hauts-de-France",
+      "text": "Nord (59) et Pas-de-Calais (62)",
+      "villes": "Lille, Roubaix, Tourcoing, Villeneuve-d'Ascq, Marcq-en-Barœul, Douai, Valenciennes, Lens, Arras, Dunkerque"
     },
     {
-      "title": "Centre-Val de Loire",
-      "text": "Intervention sur l'ensemble de la région"
+      "title": "Eure-et-Loir (28) & Centre-Val de Loire",
+      "text": "Tout le département 28 et la région Centre-Val de Loire",
+      "villes": "Chartres, Dreux, Châteaudun, Nogent-le-Rotrou, Lucé, Vernouillet, Mainvilliers, Épernon, Maintenon, Bonneval, Orléans, Tours, Blois"
     },
     {
-      "title": "Yvelines & Ouest parisien",
-      "text": "Intervention sur l'ensemble du secteur"
+      "title": "Yvelines (78) & Ouest parisien",
+      "text": "Yvelines (78) et Hauts-de-Seine (92)",
+      "villes": "Versailles, Saint-Germain-en-Laye, Rambouillet, Saint-Quentin-en-Yvelines, Poissy, Mantes-la-Jolie, Plaisir, Le Chesnay, Sartrouville, Rueil-Malmaison, Nanterre, Boulogne-Billancourt"
     }
   ],
   "clients": {
