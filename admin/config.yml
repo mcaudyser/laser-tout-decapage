@@ -47,10 +47,6 @@ collections:
               - { label: "Sous-titre", name: "subtitle", widget: text }
               - { label: "Badge", name: "badge", widget: string }
 
-          - label: "Bandeau défilant"
-            name: "marquee"
-            widget: string
-
           - label: "4 arguments clés"
             name: "arguments"
             widget: list

@@ -1,6 +1,8 @@
 /* ===== Laser Tout Décapage — styles ===== */
 
 :root {
+  --green: #1f9d55;
+  --green-light: #7cc142;
   --dark-1: #212327;
   --dark-2: #262830;
   --dark-3: #2f323a;
@@ -250,9 +252,12 @@ section {
 }
 
 .brand img {
-  height: 48px;
-  width: 48px;
+  height: 56px;
+  width: 56px;
   object-fit: contain;
+  background: #fff;
+  border-radius: 50%;
+  padding: 2px;
 }
 
 .main-nav {
@@ -430,44 +435,6 @@ section {
   flex-wrap: wrap;
 }
 
-/* ===== Marquee ===== */
-
-.marquee {
-  background: var(--dark-1);
-  border-top: 1px solid var(--line-light-1);
-  border-bottom: 1px solid var(--line-light-1);
-  overflow: hidden;
-  white-space: nowrap;
-  padding: 16px 0;
-}
-
-.marquee-track {
-  display: inline-flex;
-  animation: marquee-scroll 16s linear infinite;
-}
-
-.marquee-track span {
-  display: inline-flex;
-  align-items: center;
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-size: 0.95rem;
-  color: var(--text-light-dim);
-  padding: 0 28px;
-}
-
-.marquee-track span::after {
-  content: "\2726";
-  color: var(--yellow);
-  margin-left: 28px;
-}
-
-@keyframes marquee-scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
 /* ===== Arguments cards ===== */
 
 .arguments-section { background: var(--bg-light); }
@@ -506,6 +473,10 @@ section {
 }
 
 .card-icon svg { width: 22px; height: 22px; }
+
+.arguments-section .card-icon {
+  background: linear-gradient(135deg, var(--green), var(--green-light));
+}
 
 .card h3 {
   font-size: 1.05rem;
@@ -1051,7 +1022,7 @@ section {
   color: var(--text-light);
 }
 
-.footer-brand img { height: 44px; width: 44px; object-fit: contain; }
+.footer-brand img { height: 52px; width: 52px; object-fit: contain; background: #fff; border-radius: 50%; padding: 2px; }
 
 .footer-nav {
   display: flex;

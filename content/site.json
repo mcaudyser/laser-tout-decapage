@@ -4,7 +4,6 @@
     "email": "contact@lasertoutdecapage.fr",
     "zones_texte": "Hauts-de-France, Centre-Val de Loire, Yvelines & Ouest parisien"
   },
-  "marquee": "100% écologique · Hauts-de-France · Centre-Val de Loire · Yvelines & Ouest parisien",
   "applications": {
     "bois": {
       "title": "Bois",
@@ -17,7 +16,7 @@
     },
     "metal": {
       "title": "Métal",
-      "image": "/images/uploads/métal.png",
+      "image": "/images/uploads/metal.jpg",
       "items": [
         "Rouille sur portails & ferronneries",
         "Pièces industrielles & outillage",
