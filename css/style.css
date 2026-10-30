@@ -1154,3 +1154,55 @@ section {
   .hero { padding: 72px 0 80px; }
   .footer-top { flex-direction: column; }
 }
+
+/* ===== Sécurité ===== */
+.securite-inner {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  max-width: 920px;
+  margin: 0 auto;
+}
+.securite-badge {
+  flex: 0 0 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--text-light);
+  background: radial-gradient(circle, var(--dark-3), var(--dark-1));
+  border: 3px solid var(--red);
+  box-shadow: 0 0 28px rgba(226, 18, 33, 0.45);
+}
+.securite-badge svg { width: 64px; height: 64px; }
+.securite-text h2 { margin: 0 0 12px; font-size: clamp(1.6rem, 3vw, 2.3rem); color: var(--text-light); }
+.securite-text p { color: var(--text-light-dim); line-height: 1.7; }
+.securite-text strong { color: var(--text-light); }
+.securite-points {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+}
+.securite-points li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+.securite-points li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.55em;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--red);
+}
+@media (max-width: 640px) {
+  .securite-inner { flex-direction: column; text-align: center; gap: 24px; }
+  .securite-badge { flex-basis: 100px; width: 100px; height: 100px; }
+  .securite-badge svg { width: 46px; height: 46px; }
+  .securite-points { justify-content: center; flex-direction: column; align-items: center; }
+}
