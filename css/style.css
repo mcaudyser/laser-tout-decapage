@@ -259,7 +259,7 @@ section {
 
 .main-nav {
   display: flex;
-  gap: 32px;
+  gap: 26px;
 }
 
 .main-nav a {
@@ -1134,7 +1134,7 @@ section {
   .compare-info { text-align: center; }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1200px) {
   .main-nav { display: none; }
   .menu-toggle { display: inline-flex; }
 }
@@ -1205,4 +1205,34 @@ section {
   .securite-badge { flex-basis: 100px; width: 100px; height: 100px; }
   .securite-badge svg { width: 46px; height: 46px; }
   .securite-points { justify-content: center; flex-direction: column; align-items: center; }
+}
+
+/* ===== Atouts : 3 cartes ===== */
+.cards-grid-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 1024px) { .cards-grid-3 { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; } }
+
+/* ===== Technologie : étapes + photo côte à côte ===== */
+.techno-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: center;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.techno-layout .steps-grid { grid-template-columns: 1fr; gap: 18px; }
+.techno-layout .step-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 22px;
+  padding: 24px 26px;
+}
+.techno-layout .step-number { grid-row: span 2; margin: 0; font-size: 2.2rem; }
+.techno-layout .step-card h3 { margin: 0 0 6px; }
+.techno-layout .techno-photo { margin: 0; }
+.techno-layout .techno-photo-frame { aspect-ratio: 1 / 1; }
+@media (max-width: 1024px) {
+  .techno-layout { grid-template-columns: 1fr; gap: 32px; max-width: 560px; }
+  .techno-layout .steps-grid { grid-template-columns: 1fr; }
+  .techno-layout .techno-photo-frame { aspect-ratio: 4 / 3; }
 }
