@@ -6,22 +6,38 @@
   var mobileNav = document.querySelector(".mobile-nav");
 
   if (menuToggle && mobileNav) {
-    menuToggle.addEventListener("click", function () {
-      var isHidden = mobileNav.hasAttribute("hidden");
-      if (isHidden) {
+    var setMenu = function (open) {
+      if (open) {
         mobileNav.removeAttribute("hidden");
-        menuToggle.setAttribute("aria-expanded", "true");
       } else {
         mobileNav.setAttribute("hidden", "");
-        menuToggle.setAttribute("aria-expanded", "false");
       }
+      menuToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      menuToggle.setAttribute("aria-label", open ? "Fermer le menu" : "Ouvrir le menu");
+    };
+
+    menuToggle.addEventListener("click", function () {
+      setMenu(mobileNav.hasAttribute("hidden"));
     });
 
     mobileNav.querySelectorAll("a").forEach(function (link) {
       link.addEventListener("click", function () {
-        mobileNav.setAttribute("hidden", "");
-        menuToggle.setAttribute("aria-expanded", "false");
+        setMenu(false);
       });
+    });
+
+    // Ferme le menu au toucher en dehors ou avec Échap
+    document.addEventListener("click", function (e) {
+      if (!mobileNav.hasAttribute("hidden") && !mobileNav.contains(e.target) && !menuToggle.contains(e.target)) {
+        setMenu(false);
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !mobileNav.hasAttribute("hidden")) {
+        setMenu(false);
+        menuToggle.focus();
+      }
     });
   }
 
